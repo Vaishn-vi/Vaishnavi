@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borders</title>
+    <style>
+      .solid {
+        height: 100px;
+        width: 200px;
+        padding:10px;
+        /* **********border-style: solid; */
+        /* border-width: thin; */
+        /* border-width: medium; */
+        /* border-width: thick; */
+        /********* border-width: 15px; */
+        /* border-width:5px 10px 15px 20px ; */
+        /* border-width:5px 10px 15px; */
+        /* border-width:5px 10px ; */
+
+        /******** border-color: greenyellow; */
+
+        /* border-color:red blue green orange; */
+        /* border-color:red blue green ; */
+        /* border-color:red blue  ; */
+        /* shorthand  border: width style color*/
+        border:15px solid crimson;
+        border-radius: 15px;
+      }
+      .dotted {
+        height: 100px;
+        width: 200px;
+        /* border-color:purple; */
+        border-width: 15px;
+        /* border-style: solid; */
+        border-top-style: solid;
+        border-top-color: brown;
+        border-right-style: dashed;
+        border-right-color: blue;
+
+        border-left-style: groove;
+        border-left-color: rgb(0, 255, 51);
+      }
+      .dashed {
+        border-style: dashed;
+      }
+      .double {
+        border-style: double;
+      }
+      .groove {
+        border-style: groove;
+      }
+      .ridge {
+        border-style: ridge;
+      }
+      .inset {
+        border-style: inset;
+      }
+      .outset {
+        border-style: outset;
+      }
+      .none {
+        border-style: none;
+      }
+      .hidden {
+        border-style: hidden;
+      }
+      button {
+        border-style: dotted;
+      }
+      button:hover {
+        border-style: hidden;
+      }
+      .mixed {
+        /* border-style: top right bottom left; */
+        /* border-style: solid dotted dashed none; */
+        /* border-style: top rt&left bottom; */
+        /* border-style: solid dotted dashed; */
+        /* border-style: top&down rt&lft; */
+        border-style: solid dashed;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="solid">border solid</div>
+    <p>fhgfghfghfgfhgfhgfhgfghfghfhgfghfghfhf</p>
+    <br />
+    <div class="dotted">border dotted</div>
+    <br />
+    <div class="dashed">border dashed</div>
+    <br />
+    <div class="double">border double</div>
+    <br />
+    <div class="groove">border groove</div>
+    <br />
+    <div class="ridge">border ridge</div>
+    <br />
+    <div class="inset">border inset</div>
+    <br />
+    <div class="outset">border outset</div>
+    <br />
+    <div class="none">border none</div>
+    <button>letette</button>
+    <br />
+    <br />
+    <div class="mixed">mixed border</div>
+  </body>
+</html>

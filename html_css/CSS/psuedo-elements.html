@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- selector::psuedo-element{
+        property:value;
+    } -->
+    <title>psuedo-elements</title>
+    <style>
+#para::first-line{
+    color:crimson;
+}
+#para::first-letter{
+    color:rgb(30, 20, 220);
+    font-size:30px;
+}
+#para2::before{
+    content:'%%%%%';
+}
+#para2::after{
+    content:'****';
+}
+ul li::marker{
+    color:chartreuse;
+    font-size: 30px;
+}
+p::selection{
+    background-color: pink;
+    color:blue;
+}
+    </style>
+</head>
+<body>
+    <!--applies styling to the specific part of html element 
+    1. first-line -->
+<p id="para">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia debitis ratione, nihil ex provident rem quos unde ipsum suscipit fugiat esse vitae! Voluptatibus obcaecati iste maiores, tempore minus quis a! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi eveniet eius, aspernatur enim suscipit distinctio cum quasi voluptatem consequatur quidem accusantium non eum harum ab quis voluptatibus doloremque placeat iusto ducimus excepturi? Non minima exercitationem in aliquam, assumenda ipsum molestias qui accusamus, voluptas accusantium laborum at cum, expedita eligendi quasi.</p>
+<p id="para2">This is paragraph</p>
+<ol>
+    <li class="aa">one</li>
+    <li>two</li>
+    <li>three</li>
+</ol>
+<ul>
+    <li>one</li>
+    <li>two</li>
+    <li>three</li>
+</ul>
+</body>
+</html>

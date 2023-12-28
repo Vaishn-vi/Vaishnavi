@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form Events</title>
+  </head>
+  <body>
+    <form action="" onsubmit="" onreset="console.log('form reset');">
+        <label for="">blur and focus example</label>
+      <input
+        type="text"
+        name=""
+        id=""
+        onblur="console.log('Input field is blurred now')"
+        onfocus="console.log('input field is focused')"
+      />
+<br>
+      <hr>
+      <br>
+      <label for="">onchange example</label>
+      <input type="text" name="" id=""  onchange="console.log('value changed')" oninput="console.log('user added input')">
+      <br>
+      <hr>
+      <br>
+      <input
+        type="text"
+        name="fname"
+        value="sample check"
+        title="numbers and special chacters are not allowed"
+         required
+        oninvalid="console.log('invalid value')"
+        onselect="console.log('value selected')"
+        
+      />
+<br>
+<label for="">search</label>
+<input type="search" name="ssss" id="" onsearch="alert('value search')">
+      <input type="submit" value="Submit" />
+      <input type="reset" value="Reset"  />
+    </form>
+  </body>
+</html>

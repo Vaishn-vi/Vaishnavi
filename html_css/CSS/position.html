@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Position Document</title>
+    <style>
+        .div1 {
+        background-color: blueviolet;
+        height: 100px;
+        width: 300px;
+        border: 3px solid blue;
+        top:10px;
+        left:100px;
+        position: relative;
+      }
+      .fixedExample{
+        background-color: rgb(225, 89, 198);
+        height: 100px;
+        width: 300px;
+        border: 3px solid blue;
+       bottom:0;
+       right:0;
+        position: fixed;
+      }
+      .absoluteExample{
+        background-color: rgb(112, 236, 30);
+        height: 500px;
+        width: 500px;
+        border: 3px solid blue;
+        top:56px;
+        position: relative;
+      }
+      .innerDivForAbsolute{
+        background-color: rgb(162, 73, 10);
+        height: 100px;
+        width: 100px;
+        border: 3px solid blue;
+        position:absolute;
+        bottom:0;
+        right:0;
+      }
+    </style>
+</head>
+<body>
+   
+    <!-- position: static(by default), relative(relative to original position), fixed(relative to viewport), absolute (sets position according to ancestor(parent)), sticky 
+    top, left, right , bottom-->
+    <div class="div1">this is div</div>
+   <div class="fixedExample">this is div example for fixed position</div>
+   <br><br><br><br>
+   <div class="absoluteExample">
+    <div class="innerDivForAbsolute"></div>
+   </div>
+   
+</body>
+</html>

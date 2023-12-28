@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <!-- selector:psuedo-class{
+        property:value;
+    } -->
+    <style>
+        a:link{
+            color:black;
+            
+        }
+        a:visited{
+            color:rgb(7, 202, 209);
+           
+        }
+      a:hover {
+        color: rgb(244, 236, 8);
+        font-size: 25px;
+      }
+      a:active {
+        color: rgb(12, 246, 54);
+      }
+      div{
+        height:200px;
+        width:300px;
+        background-color: aqua;
+      }
+      /* div:hover{
+        height:500px;
+        width:700px;
+        background-color: rgb(234, 90, 219);
+      } */
+      .inpt{
+        background-color: burlywood;
+        width:200px;
+        height:40px;
+        border:2px solid rgb(244, 29, 29);
+      }
+      input:focus{
+        background-color: blueviolet;
+      }
+      input:checked{
+        height: 60px;
+        width:30px;
+      }
+     p:first-child{
+color:blue;
+font-size:30px;
+      }
+
+      
+    </style>
+  </head>
+  <body>
+    <!-- this applies styles on the different state of a specific element -->
+    <a href="https://www.w3schools.com/">visit w3school</a>
+    <br>
+    <a href="https://www.javatpoint.com/java-tutorial">visit javatpoint</a>
+    <div>this is div</div>
+    <br><br>
+    <input class="inpt" type="text">
+    <br><br>
+    <input type="radio" name="" id="">
+    <br><br>
+    <input type="checkbox" name="" id="">
+    <div>
+        <p>para 1</p>
+        <p>para 2</p>
+        <p>para 3</p>
+
+    </div>
+  </body>
+</html>
