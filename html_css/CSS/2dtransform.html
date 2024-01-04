@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2d Transform</title>
+    <style>
+        
+        
+        div{
+            /* position: relative;
+            top:100px;
+            left:100px; */
+            background-color: blue;
+            height: 100px;
+            width:300px;
+            border:2px solid red;
+            color:white;
+            
+           
+        }
+        .demo{
+           /* transform: matrix(1,0.2, 0,1,50, 60  ); */
+           transform: translateY(100px);
+        }
+    </style>
+</head>
+<body>
+    <!-- 2 types Transformation: 2d and 3d(move, rotate, scale,skew)
+    transform :translate(x,y),rotate(deg), scale(w, h), skew(),skewX, matrix(scaleX, skewY, skewX, scaleY, translateX, translateY)   -->
+    <div class="original"> original</div>
+    <br><br><br><br>
+    <div class="demo"> demo</div>
+</body>
+</html>

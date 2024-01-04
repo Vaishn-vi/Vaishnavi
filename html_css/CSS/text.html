@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text</title>
+    <style>
+      .p1 {
+        color: rgb(240, 9, 101);
+        background-color: rgb(69, 7, 227);
+        /* left , right, center , justify*/
+        text-align: justify;
+        direction: rtl;
+        unicode-bidi: bidi-override;
+      }
+      .p2 {
+        text-align-last:    justify;
+        text-indent: 100px;
+        letter-spacing: 1px;
+        line-height: 20px;
+        word-spacing: 30px;
+        white-space:nowrap;
+      }
+      .div1 {
+        border: 2px solid blue;
+        height: 200px;
+        width: 300px;
+        text-align: justify;
+      }
+      .p3 {
+        /* overline , line-through, underline, can be applied all at the same time*/
+        /* text-decoration-line: overline underline line-through;
+        text-decoration-color: blueviolet;
+        text-decoration-style:solid;
+        text-decoration-thickness: 4px; */
+        /* text-decoration:line(required) color(optional) style(optional) thickness(optional) */
+        text-decoration: underline red wavy 3px;
+        text-transform: capitalize;
+      }
+      .p4 {
+        text-transform: lowercase;
+      }
+      .p5{
+        font-size: 70px;
+        color: aqua;
+        text-shadow: 3px 5px 3px blue;
+      }
+
+    </style>
+  </head>
+  <body>
+    <p class="p1">Helllo How are you!!!</p>
+    <p class="p2">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda veniam
+      esse voluptatum, sequi expedita, distinctio natus incidunt temporibus vero
+      enim sed quasi consequuntur vel fugit quas quae excepturi tempore
+      hic.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Assumenda
+      veniam esse voluptatum, sequi expedita, distinctio natus incidunt
+      temporibus vero enim sed quasi consequuntur vel fugit quas quae excepturi
+      tempore hic.Assumenda veniam esse voluptatum, sequi expedita, distinctio
+      natus incidunt temporibus vero enim sed quasi consequuntur vel fugit quas
+      quae excepturi tempore hic.
+    </p>
+
+    <div class="div1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. At consectetur
+      ipsum voluptatibus tenetur necessitatibus eligendi ab totam sint commodi
+      illo.Lorem ipsum dolor sit amet consectetur adipisicing elit. At
+      consectetur ipsum voluptatibus tenetur necessitatibus eligendi ab totam
+      sint commodi illo.Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      At consectetur ipsum voluptatibus tenetur necessitatibus eligendi ab totam
+      sint commodi illo.
+    </div>
+
+    <p class="p3">this is text decoration example</p>
+    <p class="p4">VDHSVDVDVFHDVFHDVHDVFHDVFHDV</p>
+
+    <p class="p5">Example</p>
+  </body>
+</html>

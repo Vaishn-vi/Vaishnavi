@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- element[attribute]{
+property:value;
+    } -->
+    <title>Attribute selectors</title>
+    <style>
+/* a[target]{
+  color:red;  
+} */
+a[target='_blank']{
+    color:blue;
+}
+p[class=' check']{
+    color:red;
+}
+p[class~='sample']{
+    border:2px solid green;
+}
+p[class|='lorem']{
+    border:5px solid rgb(30, 0, 128);
+} 
+p[title^='panda']{
+    background-color: yellow;
+}
+p[title$='happy']{
+    text-decoration: line-through;
+} 
+p[title*=' hap']{
+    color:darkslateblue;
+    font-size:30px;
+}
+/* p[class]{
+    color:red;
+} */
+    </style>
+</head>
+<body>
+    <!-- It applies styling on basis attribute and the value of attribute of html element
+    1.[attribute] 2.[attribute='value'](exact value match)  3. [attribute~='value']should contain this value 4.[attribute|='value']  exact match or value followed by the hyphen(-) 5. [attribute^='value'] the value should start with given value  6.[attribute$='value'] should end the value by specified value 7.[attribute*='value'] specified value should part of value of attribute-->  
+    
+    <a href="">sample1</a>
+    <a href="" target="_self">sample 2</a>
+    <a href="" target="_blank">sample 3</a>
+    <a href="" target="_blank">sample 4</a>
+
+
+    <p class="check sample" title="panda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, doloremque. Adipisci quo eligendi est magni dolore ipsa sunt quae obcaecati, unde consequatur ab consequuntur, numquam eius odio earum. Veniam sed nam dicta amet ea ipsum animi nesciunt voluptatem iusto beatae!
+    </p>
+    <p class=" check" title="panda-happy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, doloremque. Adipisci quo eligendi est magni dolore ipsa sunt quae obcaecati, unde consequatur ab consequuntur, numquam eius odio earum. Veniam sed nam dicta amet ea ipsum animi nesciunt voluptatem iusto beatae!
+    </p>
+    <p class="lorem" title=" panda happy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, doloremque. Adipisci quo eligendi est magni dolore ipsa sunt quae obcaecati, unde consequatur ab consequuntur, numquam eius odio earum. Veniam sed nam dicta amet ea ipsum animi nesciunt voluptatem iusto beatae!
+    </p>
+    <p class="lorem-sample" title="cutepanda">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint, doloremque. Adipisci quo eligendi est magni dolore ipsa sunt quae obcaecati, unde consequatur ab consequuntur, numquam eius odio earum. Veniam sed nam dicta amet ea ipsum animi nesciunt voluptatem iusto beatae!
+    </p>
+</body>
+</html>

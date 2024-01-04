@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <title>Mouse Events</title>
+</head>
+<body>
+    <!-- onclick ondblclick onmousemove -->
+    <button onclick="console.log('button clicked');">click</button>
+    <button ondblclick="console.log('button double clicked');">click2</button>
+    <p onclick="alert('clicked on para')">Lorem ipsum dolor sit amet.</p>
+    <div id="hey" style="height: 200px; width:500px; background-color: blueviolet;" onclick="" ondblclick="console.log('dblclicked in div');" onmousemove="" onmouseenter="enter()" onmouseleave="leave()" ></div>
+    <br><br>
+    <div id="hey" style="height: 200px; width:500px; background-color: rgb(86, 92, 206);" onmouseout="console.log('mouse out');" onmousedown="console.log('on mouse down');" onmouseup="console.log('mouse up');" onmouseover="console.log('onmouseover');"  onwheel="console.log('mouse wheel');" ></div>
+    <script>
+    function enter(){
+        console.log('mouse entered');
+document.getElementById('hey').style.backgroundColor='red';
+document.getElementById('hey').style.height='500px';
+document.getElementById('hey').style.width='700px';
+
+    }
+    
+    function leave(){
+        console.log('mouse left');
+        document.getElementById('hey').style.backgroundColor='blueviolet';
+        document.getElementById('hey').style.height='200px';
+document.getElementById('hey').style.width='500px';
+    
+    }</script>
+</body>
+</html>
